@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h1,
+        h2 {
+            color: #5B9BD5;
+            /* Set heading color */
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+
+        nav span {
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+            color: #5B9BD5;
+            /* Set nav span color */
+            font-size: large;
+            /* Set font size for nav links */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header section with group title and logo -->
+        <div class="header">
+            <img src="test.png" alt="Group Logo" class="img-fluid"> <!-- Group logo -->
+            <nav class="ms-3">
+                <span><b>WHO WE ARE</b> |</span>
+                <span><b>WHAT WE DO</b> |</span>
+                <span><b>CONTACTS</b></span>
+            </nav>
+        </div>
+
+        <!-- Main content area with two columns -->
+        <div class="row mt-4">
+            <!-- Left column for group members -->
+            <div class="col-lg-8 mb-4">
+                <h1>Group 28</h1>
+                <h2>COME AND WORK WITH US</h2>
+                <p>Marco de Sá and Ivan Nikitin</p>
+                <!-- Carousel slideshow replacing the static image -->
+                <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>Marco de Sá - Roads we walk we create.</p>
+                            <img src="marco.png" class="d-block w-100" alt="Marco de Sá" style="max-width:375px; max-height:500px; width:100%; height:auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <p>Ivan Nikitin - placeholder quote</p>
+                            <img src="ivan.png" class="d-block w-100" alt="Ivan Nikitin" style="max-width:407px; max-height:500px; width:100%; height:auto;">
+                        </div>
+                    </div>
+                </div>
+                <p>© group 28 2025</p>
+                <P>made by Marco de Sá(20241833) and Ivan Nikitin(20240640)</P>
+            </div>
+            <!-- Right column for additional information and form -->
+            <div class="col-lg-4">
+                <h2>ASK INFO</h2>
+                <form>
+                    <!-- Email input field -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <!-- Textarea for user questions -->
+                    <div class="mb-3">
+                        <label for="question" class="form-label">Your Question:</label>
+                        <textarea id="question" name="question" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <!-- Checkbox for requesting a price -->
+                    <!-- Checkbox for requesting a price -->
+                    <div class="form-check mb-3">
+                        <label for="price-request" class="form-check-label">Request a price?</label>
+                        <input type="checkbox" id="price-request" name="price-request" class="form-check-input">
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
